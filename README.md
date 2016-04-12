@@ -4,7 +4,7 @@ Prometheus exporter for OpenStack metrics
 See https://prometheus.io 
 
 ## Install
-pip install git+github.com/gvauter/prometheus_openstack
+pip install git+git://github.com/gvauter/prometheus_openstack
 
 ## Usage
 
