@@ -12,9 +12,9 @@ class NovaCollector(object):
 
     def collect(self):
         username = self.config['openstack']['username']
-        password = '90224bdeb6394f65'
-        tenant = 'admin'
-        auth_url = 'http://192.168.123.140:5000/v2.0'
+        password = self.config['openstack']['password']
+        tenant = self.config['openstack']['tenant']
+        auth_url = self.config['openstack']['auth_url']
         nova = nova_client.Client("2", username, password, tenant, auth_url)
 
         METRIC_PREFIX = 'openstack_nova'
