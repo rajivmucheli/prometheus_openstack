@@ -1,5 +1,5 @@
 # prometheus_openstack
-Prometheus exporter for OpenStack
+Prometheus exporter for OpenStack metrics
 
 See https://prometheus.io 
 
@@ -17,7 +17,7 @@ openstack:
     username: <usename>
     password: <password>
     tenant: <tenant name>
-    auth_url: <http://<ip>:5000/v2.0
+    auth_url: <http://<ip>:5000/v2.0>
 ```
 
 ## Metrics
