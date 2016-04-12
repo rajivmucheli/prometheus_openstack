@@ -7,7 +7,7 @@ setup(
     author = "George Vauter",
     author_email = "george.vauter@inin.com  ",
     description = ("OpenStack exporter for the Prometheus monitoring system."),
-    long_description = ("See https://github.com/... for documentation."),
+    long_description = ("See https://github.com/gvauter/prometheus_openstack/blob/master/README.md for documentation."),
     license = "Apache Software License 2.0",
     keywords = "prometheus exporter monitoring openstack metrics",
     url = "https://github.com/gvauter/prometheus_openstack",

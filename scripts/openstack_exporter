@@ -1,0 +1,25 @@
+#!/usr/bin/env python
+
+""" Starts the OpenStack Exporter """
+
+import yaml
+import argparse
+from openstack_exporter.exporter import start_exporter
+
+if __name__ == '__main__':
+
+    parser = argparse.ArgumentParser()
+    parser.add_argument('--config', type=argparse.FileType('r'), \
+        default='../openstack.yaml', 
+        help='Location of configuration file.  Default is openstack.yaml')
+    parser.add_argument('--port', type=int, default=9104, \
+        help='Port number for HTTP server')
+    parser.add_argument('--interval', type=int, default=30, \
+        help='How often to collect OpenStack metrics')
+    args = parser.parse_args()
+
+    start_exporter(yaml.load(args.config))
+
+    print 'Staring openstack_exporter...'
+
+
