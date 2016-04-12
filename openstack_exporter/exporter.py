@@ -5,8 +5,6 @@ from collector import NovaCollector
 from prometheus_client.core import REGISTRY
 from prometheus_client import generate_latest, start_http_server
 
-#with open('../openstack_exporter.yaml', 'r') as f:
-#    config = yaml.load(f)
 
 def start_exporter(config):
     REGISTRY.register(NovaCollector(config))
