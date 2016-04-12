@@ -1,0 +1,9 @@
+### YAML config in tree format
+openstack:
+    username: 'admin'
+    password: '90224bdeb6394f65'
+    tenant: 'admin'
+    auth_url: 'http://192.168.123.140:5000/v2.0'
+collectors:
+    nova: true
+    cinder: false
