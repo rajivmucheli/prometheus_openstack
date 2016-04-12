@@ -1,0 +1,9 @@
+### YAML config in tree format ###
+
+# OpenStack authentication info
+openstack:
+    username: 'admin'
+    password: 'changeme'
+    tenant: 'admin'
+    auth_url: 'http://127.0.0.1:5000/v2.0'
+
