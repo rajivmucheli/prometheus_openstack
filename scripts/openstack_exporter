@@ -18,7 +18,7 @@ if __name__ == '__main__':
         help='How often to collect OpenStack metrics')
     args = parser.parse_args()
 
-    start_exporter(yaml.load(args.config), args.port)
+    start_exporter(yaml.load(args.config), args.port, args.interval)
 
     print 'Staring openstack_exporter...'
 
