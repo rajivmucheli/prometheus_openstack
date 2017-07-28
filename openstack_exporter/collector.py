@@ -2,7 +2,7 @@
 """ OpenStack metrics exporter for prometheus.io"""
 
 from novaclient import client as nova_client
-from keystoneclient.v2_0 import client as keystone_client
+from keystoneclient.v3 import client as keystone_client
 from prometheus_client.core import GaugeMetricFamily
 
 
@@ -18,7 +18,7 @@ class NovaCollector(object):
         tenant = self.config['openstack']['tenant']
         auth_url = self.config['openstack']['auth_url']
 
-        nova = nova_client.Client("2", username, password, tenant, auth_url)
+        nova = nova_client.Client("3", username, password, tenant, auth_url)
 
         keystone = keystone_client.Client(
                    username = username,
