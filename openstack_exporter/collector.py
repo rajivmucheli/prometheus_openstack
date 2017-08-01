@@ -18,7 +18,7 @@ class NovaCollector(object):
         tenant = self.config['openstack']['tenant']
         auth_url = self.config['openstack']['auth_url']
 
-        nova = nova_client.Client("3", username, password, tenant, auth_url)
+        nova = nova_client.Client("2", username, password, tenant, auth_url)
 
         keystone = keystone_client.Client(
                    username = username,
